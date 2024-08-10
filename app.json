@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "Fulga Devotional",
+    "slug": "fulga-devotional",
+    "owner": "itkeyzz",
+    "version": "0.0.1",
+    "orientation": "portrait",
+    "icon": "./assets/logos/app_icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/logos/splash_screen.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "buildNumber": "1.0.1"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/logos/adaptive_icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.itkeyzz.fulgadevotional",
+      "versionCode": 8,
+      "minSdkVersion": 21,
+      "targetSdkVersion": 34,
+      "compileSdkVersion": 34,
+      "buildToolsVersion": "34.0.0"
+    },
+    "web": {
+      "favicon": "./assets/logos/app_icon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "10bb5d92-5a73-458a-9e4c-8a19931f967f"
+      }
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "enableProguardInReleaseBuilds": true,
+            "extraProguardRules": "-keep public class com.horcrux.svg.** {*;}",
+            "allowBackup": false
+          }
+        }
+      ]
+    ]
+  }
+}
